@@ -1,10 +1,17 @@
 require File.expand_path(File.dirname(__FILE__) + '/neo')
 
 # Implement a DiceSet Class here:
-#
-# class DiceSet
-#   code ...
+#class Dog
 # end
+#
+# def test_instances_of_classes_can_be_created_with_new
+#   fido = Dog.new
+#   assert_equal AboutClasses::Dog, fido.class
+# end
+class DiceSet
+  dice = []
+  roll = []
+end
 
 class AboutDiceProject < Neo::Koan
   def test_can_create_a_dice_set

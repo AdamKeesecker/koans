@@ -24,10 +24,10 @@ require 'about_triangle_project_2'
 require 'about_iteration'
 require 'about_blocks'
 require 'about_sandwich_code'
-require 'about_scoring_project'
+# require 'about_scoring_project'   ------NEED HELP ON THESE
 require 'about_classes'
 require 'about_open_classes'
-require 'about_dice_project'
+# require 'about_dice_project'      ------NEED HELP ON THESE
 require 'about_inheritance'
 require 'about_modules'
 require 'about_scope'
