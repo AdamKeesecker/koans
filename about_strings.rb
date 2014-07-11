@@ -27,23 +27,23 @@ class AboutStrings < Neo::Koan
     assert_equal true, a == b
   end
 
-  # def test_use_flexible_quoting_to_handle_really_hard_cases
-    # a = %(flexible quotes can handle both ' and " characters)
-    # b = %!flexible quotes can handle both ' and " characters!
-    # c = %{flexible quotes can handle both ' and " characters}
-    # assert_equal true, a == b
-    # assert_equal true, a == c
-  # end
+  def test_use_flexible_quoting_to_handle_really_hard_cases
+    a = %(flexible quotes can handle both ' and " characters)
+    b = %!flexible quotes can handle both ' and " characters!
+    c = %{flexible quotes can handle both ' and " characters}
+    assert_equal true, a == b
+    assert_equal true, a == c
+  end
 
-  # def test_flexible_quotes_can_handle_multiple_lines
-    # long_string = %{
-# It was the best of times,
-# It was the worst of times.
-# }
-    # assert_equal 54, long_string.length
-    # assert_equal 3, long_string.lines.count
-    # assert_equal \n, long_string[0,1]
-  # end
+  def test_flexible_quotes_can_handle_multiple_lines
+    long_string = %{
+It was the best of times,
+It was the worst of times.
+}
+    assert_equal 54, long_string.length
+    assert_equal 3, long_string.lines.count
+    assert_equal "\n", long_string[0,1]
+  end
 
   def test_here_documents_can_also_handle_multiple_lines
     long_string = <<EOS
